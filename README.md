@@ -41,6 +41,8 @@ VALUES (
 
 ## Run some manual tests
 
+I used [httpie](https://httpie.io/) to run some manual tests:
+
 ```
 http GET http://127.0.0.1:8080/song/803034c3-b3d1-45b8-98c4-cb385aab8c31
 http PUT http://127.0.0.1:8080/song/803034c3-b3d1-45b8-98c4-cb385aab8c31 name="New song" genre="Rock" artist="Sam" length:=123 file_path="s3://some/path/to/song" ranking:=2
